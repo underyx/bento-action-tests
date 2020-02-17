@@ -1,0 +1,17 @@
+name: "Bento Action"
+author: "Return To Corporation"
+description: "Find bugs in pull requests with Bento"
+runs:
+  using: "docker"
+  image: "action/Dockerfile"
+inputs:
+  acceptTermsWithEmail:
+    description: |
+      To use Bento, you must accept our Terms of Service & Privacy Policy (https://bento.dev/privacy)
+      by specifying your email address.
+      This email will be used to provide support and share product updates
+      � you can unsubscribe at any time.
+    required: true
+branding:
+  icon: "square"
+  color: "purple"
